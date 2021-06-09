@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+
+  &, :active, :focus, :hover {
+    outline: none;
+  }
+
+}
+
+body, html {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  @include font();
+  @include fontSize();
+  color: $colorDefault;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.text {
+  &--left {
+    text-align: left;
+  }
+
+  &--center {
+    text-align: center;
+  }
+
+  &--right {
+    text-align: right;
+  }
+
+  &--capitalize {
+    text-transform: capitalize;
+  }
+
+  &--uppercase {
+    text-transform: uppercase;
+  }
+}

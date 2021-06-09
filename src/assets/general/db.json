@@ -1,0 +1,14 @@
+{
+  "menuLinks" : [
+    {
+      "id" : 1,
+      "title" : "Портфель:",
+      "icon" : "portfolio"
+    },
+    {
+      "id" : 2,
+      "title" : "История сделок:",
+      "icon" : "history"
+    }
+  ]
+}

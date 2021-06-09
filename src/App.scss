@@ -1,0 +1,32 @@
+@import './assets/scss/fonts.scss';
+@import './assets/scss/mixins.scss';
+@import './assets/scss/variables.scss';
+
+.crypto {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1000px;
+  width: 100%;
+  min-height: 550px;
+  margin: 20px auto;
+  box-shadow: $shadowDefault;
+  border-radius: $borderRadiusMain;
+  transition: $transitionTime;
+  overflow: hidden;
+
+  &__menu.menu--hidden {
+    width: 50px;
+
+    & + .crypto__list {
+      width: calc( 100% - 50px );
+    }
+
+  }
+
+  &__list {
+    width: calc( 100% - 300px );
+    padding: 20px;
+    transition: $transitionTime;
+  }
+
+}
